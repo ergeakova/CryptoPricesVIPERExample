@@ -6,3 +6,12 @@
 //
 
 import Foundation
+import UIKit
+
+protocol AnyView{
+    
+}
+
+class CryptoView: UIViewController, AnyView{
+    
+}
