@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		C066A2052873938800344CB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C066A2042873938800344CB3 /* AppDelegate.swift */; };
 		C066A2072873938800344CB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C066A2062873938800344CB3 /* SceneDelegate.swift */; };
-		C066A2092873938800344CB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C066A2082873938800344CB3 /* ViewController.swift */; };
-		C066A20C2873938800344CB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C066A20A2873938800344CB3 /* Main.storyboard */; };
 		C066A20E2873938E00344CB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C066A20D2873938E00344CB3 /* Assets.xcassets */; };
 		C066A2112873938E00344CB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C066A20F2873938E00344CB3 /* LaunchScreen.storyboard */; };
+		C066A21A2873941100344CB3 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C066A2192873941100344CB3 /* View.swift */; };
+		C066A21C2873942B00344CB3 /* Interctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C066A21B2873942A00344CB3 /* Interctor.swift */; };
+		C066A21E2873943D00344CB3 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C066A21D2873943D00344CB3 /* Presenter.swift */; };
+		C066A2212873945B00344CB3 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C066A2202873945B00344CB3 /* Entity.swift */; };
+		C066A2232873946600344CB3 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C066A2222873946600344CB3 /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C066A2012873938800344CB3 /* CryptoPricesVIPERExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoPricesVIPERExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C066A2042873938800344CB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C066A2062873938800344CB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C066A2082873938800344CB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C066A20B2873938800344CB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C066A20D2873938E00344CB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C066A2102873938E00344CB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C066A2122873938E00344CB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C066A2192873941100344CB3 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		C066A21B2873942A00344CB3 /* Interctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interctor.swift; sourceTree = "<group>"; };
+		C066A21D2873943D00344CB3 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		C066A2202873945B00344CB3 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		C066A2222873946600344CB3 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +64,14 @@
 			children = (
 				C066A2042873938800344CB3 /* AppDelegate.swift */,
 				C066A2062873938800344CB3 /* SceneDelegate.swift */,
-				C066A2082873938800344CB3 /* ViewController.swift */,
-				C066A20A2873938800344CB3 /* Main.storyboard */,
 				C066A20D2873938E00344CB3 /* Assets.xcassets */,
 				C066A20F2873938E00344CB3 /* LaunchScreen.storyboard */,
 				C066A2122873938E00344CB3 /* Info.plist */,
+				C066A2192873941100344CB3 /* View.swift */,
+				C066A21B2873942A00344CB3 /* Interctor.swift */,
+				C066A21D2873943D00344CB3 /* Presenter.swift */,
+				C066A2202873945B00344CB3 /* Entity.swift */,
+				C066A2222873946600344CB3 /* Router.swift */,
 			);
 			path = CryptoPricesVIPERExample;
 			sourceTree = "<group>";
@@ -127,7 +136,6 @@
 			files = (
 				C066A2112873938E00344CB3 /* LaunchScreen.storyboard in Resources */,
 				C066A20E2873938E00344CB3 /* Assets.xcassets in Resources */,
-				C066A20C2873938800344CB3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +146,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C066A2092873938800344CB3 /* ViewController.swift in Sources */,
+				C066A2232873946600344CB3 /* Router.swift in Sources */,
+				C066A21E2873943D00344CB3 /* Presenter.swift in Sources */,
+				C066A21A2873941100344CB3 /* View.swift in Sources */,
+				C066A2212873945B00344CB3 /* Entity.swift in Sources */,
 				C066A2052873938800344CB3 /* AppDelegate.swift in Sources */,
+				C066A21C2873942B00344CB3 /* Interctor.swift in Sources */,
 				C066A2072873938800344CB3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +159,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C066A20A2873938800344CB3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C066A20B2873938800344CB3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C066A20F2873938E00344CB3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +296,6 @@
 				INFOPLIST_FILE = CryptoPricesVIPERExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +323,6 @@
 				INFOPLIST_FILE = CryptoPricesVIPERExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
